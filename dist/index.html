@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start Over Tamale Order</title>
+    <link rel="manifest" href="/assets/manifest-CiSYhlJF.json">
+    <link rel="icon" href="/assets/favicon-32x32-CRsdeu7T.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-BWoQinGV.png" type="image/png"/>
+    <script type="module" crossorigin src="/assets/index-DQS7ljA4.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dm4-Eh64.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tamale Orders</h1>
+
+      <form id="orderForm">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" list="customerList" required />
+        <datalist id="customerList"></datalist> <!-- Add this line -->
+        
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" />
+
+        <label for="pickupDate">Pickup Date:</label>
+        <input type="date" id="pickupDate" name="pickupDate"  />
+
+        <label for="pickupTime">Pickup Time:</label>
+        <input type="time" id="pickupTime" name="pickupTime"  />
+
+        <fieldset>
+          <legend>Chili Colorado:</legend>
+          <label for="coloradoAmount">Number of Tamales:</label>
+          <input type="number" id="coloradoAmount" name="coloradoAmount" min="0"  required/>
+
+          <label for="coloradoTemperature">Temperature:</label>
+          <select id="coloradoTemperature" name="coloradoTemperature" >
+            <option value="hot">Hot</option>
+            <option value="cold">Cold</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Peppers and Cheese:</legend>
+          <label for="cheeseAmount">Number of Tamales:</label>
+          <input type="number" id="cheeseAmount" name="cheeseAmount" min="0"  required/>
+
+          <label for="cheeseTemperature">Temperature:</label>
+          <select id="cheeseTemperature" name="cheeseTemperature" >
+            <option value="hot">Hot</option>
+            <option value="cold">Cold</option>
+          </select>
+        </fieldset>
+
+        <button type="submit" id="addOrderButton">Add Order</button>
+        <button type="button" id="generatePdfButton">Order List</button>
+      </form>
+
+      <div class="totalOrdered">
+        <div id="totalChiliColorado">Total Chili Colorado Ordered: 0</div>
+        <div id="totalPeppersCheese">Total Peppers and Cheese Ordered: 0</div>
+      </div>
+
+      <div id="orderList">
+        <!-- Orders will be dynamically added here -->
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.24/jspdf.plugin.autotable.min.js"></script>
+
+  </body>
+</html>
