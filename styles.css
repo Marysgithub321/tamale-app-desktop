@@ -1,0 +1,154 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3cdab;
+  color: #0dbd79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Container for the main content */
+.container {
+  max-width: 600px;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #e3cdab;
+  border: 3px solid #c6695c;
+  border-radius: 10px;
+  text-align: center; /* Center align content inside container */
+}
+
+/* Header styling */
+h1 {
+  color: #d57c36;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  color: #c6695c;
+}
+
+/* Input and button styling */
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="text"],
+select,
+button {
+  width: calc(100% - 16px); /* Adjust width for padding */
+  height: 40px; /* Set height for uniformity */
+  padding: 8px;
+  margin: 0 auto; /* Center align */
+  border: 1px solid #e3cdab; /* Match background color */
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Button styling */
+button {
+  width: 150px;
+  background-color: rgb(187, 13, 13);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #a81c1e;
+}
+
+/* Order list section */
+#orderList {
+  margin-top: 20px;
+}
+
+/* Individual order item styling */
+.order-item {
+  background-color: #d57c36;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative; /* Positioning for absolute elements inside */
+}
+
+/* Label styling inside order item */
+.order-item label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Checkbox styling inside order item */
+.order-item input[type="checkbox"] {
+  margin-left: 10px; /* Space between Delete button and checkbox */
+  vertical-align: middle;
+}
+
+/* Fulfilled label styling inside order item */
+.order-item .fulfilled-label {
+  color: #0dbd79; /* Green color for picked up checkbox text */
+}
+
+/* Button styling inside order item */
+.order-item button {
+  margin-left: 10px; /* Space between Edit and Delete buttons */
+  width: 70px; /* Adjusted width for buttons */
+}
+
+/* Total Chili Colorado ordered section styling */
+#totalChiliColorado {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Total Peppers and Cheese ordered section styling */
+#totalPeppersCheese {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Total ordered section styling */
+.totalOrdered {
+  border: 1px solid #264b76;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for total ordered section */
+.totalOrdered:hover {
+  color: rgb(98, 189, 98);
+  text-decoration-line: underline;
+}
+
+#generatePdfButton {
+  background-color: rgb(187, 13, 13);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+  width: 150px; /* Full width */
+  margin-top: 10px; /* Spacing above the button */
+}
+#generatePdfButton:hover {
+  background-color: #a81c1e;
+}
+
