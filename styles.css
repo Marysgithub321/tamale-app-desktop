@@ -1,7 +1,7 @@
 /* General body styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #e3cdab;
+  background-color: #e9dbc8;
   color: #0dbd79;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   padding: 20px;
   background-color: #e3cdab;
-  border: 3px solid #c6695c;
+  border: 3px solid #d3260f;
   border-radius: 10px;
   text-align: center; /* Center align content inside container */
 }
